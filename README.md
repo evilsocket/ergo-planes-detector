@@ -11,7 +11,7 @@ Download the [PlanesNet dataset](https://www.kaggle.com/rhammell/planesnet) (the
 
     ergo train /path/to/planes-detector --dataset /path/to/planesnet/pictures
 
-This will make ergo preprocess the pictures, import them as a csv dataset and start the training algorithm (see [how to train on GPU](https://github.com/evilsocket/ergo#enable-gpu-support))
+This will make ergo preprocess the pictures, import them as a csv dataset and start the training algorithm (see [how to train on GPU](https://github.com/evilsocket/ergo#enable-gpu-support)) that can be monitored with `tensorboard` (`logs` folder).
 
 After training is completed, you can view the model structure and how the accuracy and loss metrics changed during training with:
 
