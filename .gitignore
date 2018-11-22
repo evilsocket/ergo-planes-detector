@@ -1,0 +1,8 @@
+history.json
+__pycache__
+model.png
+model.stats
+model.yml
+model.h5
+*.csv
+logs
