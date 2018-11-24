@@ -33,3 +33,14 @@ def prepare_dataset(folder):
         dataset.append(np.insert(X, 0, y, axis=0))
 
     return pd.DataFrame(dataset)
+
+def prepare_input(path):
+    log.debug("vectorializing %s ...", path)
+    x = misc.imread(path)
+    log.debug("shape   : %s", x.shape)
+    x = misc.imresize(x, (20, 20))
+    log.debug("resized : %s", x.shape)
+    x = x / 255
+    x = x.flatten()
+    log.debug("flat    : %s", x.shape)
+    return np.asarray([x])

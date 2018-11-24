@@ -29,9 +29,9 @@ Once the training is completed, you can clean the project from temporary dataset
     ergo clean .
     ergo serve .
 
-You can test the predictions with `curl` (the input shape is a 1200 elements long flattened vector generated from 20x20x3 pictures):
+You can test the predictions with `curl`:
 
-    curl http://127.0.0.1:8080/?x=0.78431,0,1.0,0.2345,...
+    curl http://127.0.0.1:8080/?x=/path/to/filename.jpg
 
 Alternatively you can use the file `model.h5` (created inside the project folder after training) by loadeding it as you would normally do with Keras API for evaluation.
 
