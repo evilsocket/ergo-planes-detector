@@ -17,9 +17,13 @@ After training is completed, you can view the model structure and how the accura
 
     ergo view /path/to/planes-detector
 
-<p align="center">
-    <img src="https://i.imgur.com/rUQ1Het.png">
-</p>
+| Training | ROC/AUC |
+|----------|---------|
+![](https://raw.githubusercontent.com/evilsocket/ergo-planes-detector/master/history.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-planes-detector/master/roc.png) |
+
+| Training | Validation | Testing |
+|----------|------------|---------|
+![](https://raw.githubusercontent.com/evilsocket/ergo-planes-detector/master/training_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-planes-detector/master/validation_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-planes-detector/master/test_cm.png) |
 
 #### Evaluation
 
